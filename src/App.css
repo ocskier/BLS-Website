@@ -1,0 +1,22 @@
+.nav-wrapper, .page-footer {
+  background-color: #002147 !important;
+}
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto !important;
+  color: rgba(255,255,255,.9);
+  clear: both;
+}
+.sidenav-trigger {
+  color: white;
+}
+img {
+  width: 100%
+}
+
+@media screen and (min-width: 996px) {
+.button-collapse {
+  display: none;
+}
+}

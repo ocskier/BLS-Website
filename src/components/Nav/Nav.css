@@ -1,0 +1,39 @@
+.userView a span {
+  color: black !important;
+}
+
+/* @media only screen and (max-width : 768px) {
+  .brand-logo {
+    font-size: 4.2rem !important
+  }
+}
+
+@media only screen and (max-width : 576px) {
+    .brand-logo {
+      font-size: 3.2rem !important
+    }
+  } */
+
+nav {
+  height: 120px !important
+} 
+nav i {
+  font-size: 36px;
+}
+nav ul a,
+nav.brand-logo {
+  color: white;
+}
+.brand-logo {
+  top: 10%;
+  font-size: 3.1rem !important;
+}
+
+.brand-logo p {
+  margin: 0;
+  font-size: initial;
+}
+p {
+  line-height: 1.2rem;
+  font-family: 'Srisakdi', cursive;
+}

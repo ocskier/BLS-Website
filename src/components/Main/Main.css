@@ -1,0 +1,11 @@
+/* main {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 0 40px 100px;
+  background: aliceblue;
+} */
