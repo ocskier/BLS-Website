@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Give Generously</title>
+
+  <!-- CSS  -->
+  <!-- Add Tithe favicon -->
+  <!-- <link rel="icon" href="images/tithe-favicon.png" type="image/gif" sizes="16x16"> -->
+</head>
+
+<body>
+  <!-- Dropdown Lists for state selection on mobile and desktop -->
+  <!-- <ul id="dropdown1" class="dropdown-content">
+        
+          </ul>
+          <ul id="dropdown2" class="dropdown-content"> -->
+
+  </ul>
+  <!-- Navigation Bar for Brand and State Picked Dropdown -->
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="index.html" class="brand-logo center">Brightleaf Stables
+        <br><p>Durham, NC</p></a>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Something</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+    <div class="nav-content justify-content-center">
+        <!-- <ul class="tabs center hide-on-med-and-down">
+            <li class="tabs"> -->
+              <ul style="width:16.66%" class="collapsible"><li>
+                <div style="color:black" class="collapsible-header">About</div>
+                <div class="collapsible-body">
+                  <ul class="collection">
+                <li id="menu-item-208" class="collection-item"><a href="http://brightleafstables.com/about/">Our Story</a></li>
+                <li id="menu-item-152" class="collection-item"><a href="http://brightleafstables.com/brightleaf-staff/">Brightleaf Staff</a></li>
+                <li id="menu-item-153" class="collection-item"><a href="http://brightleafstables.com/brightleaf-horses/">Brightleaf Horses</a></li>
+                <li id="menu-item-161" class="collection-item"><a href="http://brightleafstables.com/photo-gallery/">Photo Gallery</a></li>
+                <li id="menu-item-276" class="collection-item"><a href="http://brightleafstables.com/blog/">Blog</a></li>
+                <li id="menu-item-515" class="collection-item"><a href="http://brightleafstables.com/testimonial/">Testimonials</a></li>
+              </ul>
+              </div>
+              </li>
+            </ul>
+              <!-- </li>
+              <li id="menu-item-156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-156"><a href="http://brightleafstables.com/services/">Services</a>
+              <ul class="sub-menu">
+                  <li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="http://brightleafstables.com/camps/">Camps</a></li>
+                  <li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="http://brightleafstables.com/boarding/">Boarding</a></li>
+                  <li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="http://brightleafstables.com/lessons/">Lesson Programs</a></li>
+                  <li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="http://brightleafstables.com/parties-ponies/">Parties &amp; Ponies</a></li>
+                  <li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="http://brightleafstables.com/trail-rides/">Trail Rides</a></li>
+                  <li id="menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="http://brightleafstables.com/gift-certificates/">Gift Certificates</a></li>
+              </ul>
+              </li>
+              <li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-157"><a href="http://brightleafstables.com/events/">Events</a>
+              <ul class="sub-menu">
+                  <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="http://brightleafstables.com/events/">Events Calendar</a></li>
+                  <li id="menu-item-212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="http://brightleafstables.com/camps/">Horse Camp</a></li>
+              </ul>
+              </li>
+              <li id="menu-item-245" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-19 current_page_item menu-item-245"><a href="http://brightleafstables.com/contact/" aria-current="page">Contact</a></li>
+          </ul> -->
+    </div>
+  </nav>
+  <!-- A section for title of page and brand statement -->
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center category">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <!-- <h4>Tithe</h4> -->
+          <p class="header-caption center-align light">A modern web application for contributing to your favorite
+            charity!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- A section for the category cards with titles and pics  -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+
+      <div class="container">
+        <br>
+        <!--   Category Row updated dynamically  -->
+        <div id="catRow" class="row cat-card">
+
+        </div>
+        <br>
+
+      </div>
+    </div>
+    <!-- A background image -->
+    <div class="parallax" id="cat-background">
+      <div style="opacity: 0.4;">
+        <img src="images/begging-1922612_1920.png" alt="Hands">
+      </div>
+    </div>
+  </div>
+
+  <!-- A section for the favorites title  -->
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <p class="header-caption center-align light">★ Favorites</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- A section for the favorite charity cards and their info  -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <!-- The favorite charity row updated dynamically -->
+        <div id="favRow" class="row center">
+
+        </div>
+      </div>
+    </div>
+    <!-- A background image -->
+    <div class="parallax">
+      <div style="opacity: 0.4;">
+        <img src="images/background_image-2.jpeg" alt="Unsplashed background img 2">
+      </div>
+    </div>
+  </div>
+
+  <!-- Tithe page footer with links to the authors portfolio pages -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s6">
+          <h5 class="white-text">Team Tithe</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students living the dream.</p>
+        </div>
+        <div class="col s6">
+          <h5 class="white-text">Connect</h5>
+          <div class="row" style="margin-bottom: 8px;">
+            <div class="col s6">
+              <ul>
+                <li><a href="https://audiosutras.github.io/Bootstrap-Portfolio/index.html" target="_blank">Christopher
+                    Dixon</a></li>
+                <li><a href="https://chandana-k.github.io/" target="_blank">Chandana Katika</a></li>
+              </ul>
+            </div>
+            <div class="col s6">
+              <ul>
+                <li><a href="https://jenguin777.github.io/Bootstrap-Portfolio/portfolio.html" target="_blank">Jen Fahey</a></li>
+                <li><a href="https://ocskier.github.io/My-Mat-Portfolio/" target="_blank">Jon Jackson</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
+    <!-- <body class="page-template-default page page-id-19 custom-background tribe-js not-multi-author no-sidebar display-header-text comments-closed">
+        <div id="page" class="hfeed site">
+        
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                    <button class="menu-toggle" aria-controls="menu" aria-expanded="false">Menu</button>
+                    <div class="menu-primary-container"><ul id="menu-primary" class="menu nav-menu"><li id="menu-item-151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-151"><a href="http://brightleafstables.com/">Home</a></li>
+        <li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-254"><a href="http://brightleafstables.com/about/">About</a>
+        <ul class="sub-menu">
+            <li id="menu-item-208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-208"><a href="http://brightleafstables.com/about/">Our Story</a></li>
+            <li id="menu-item-152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-152"><a href="http://brightleafstables.com/brightleaf-staff/">Brightleaf Staff</a></li>
+            <li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="http://brightleafstables.com/brightleaf-horses/">Brightleaf Horses</a></li>
+            <li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="http://brightleafstables.com/photo-gallery/">Photo Gallery</a></li>
+            <li id="menu-item-276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-276"><a href="http://brightleafstables.com/blog/">Blog</a></li>
+            <li id="menu-item-515" class="menu-item menu-item-type-post_type_archive menu-item-object-jetpack-testimonial menu-item-515"><a href="http://brightleafstables.com/testimonial/">Testimonials</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-156"><a href="http://brightleafstables.com/services/">Services</a>
+        <ul class="sub-menu">
+            <li id="menu-item-165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-165"><a href="http://brightleafstables.com/camps/">Camps</a></li>
+            <li id="menu-item-154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-154"><a href="http://brightleafstables.com/boarding/">Boarding</a></li>
+            <li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155"><a href="http://brightleafstables.com/lessons/">Lesson Programs</a></li>
+            <li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="http://brightleafstables.com/parties-ponies/">Parties &amp; Ponies</a></li>
+            <li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="http://brightleafstables.com/trail-rides/">Trail Rides</a></li>
+            <li id="menu-item-595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-595"><a href="http://brightleafstables.com/gift-certificates/">Gift Certificates</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-157"><a href="http://brightleafstables.com/events/">Events</a>
+        <ul class="sub-menu">
+            <li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="http://brightleafstables.com/events/">Events Calendar</a></li>
+            <li id="menu-item-212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-212"><a href="http://brightleafstables.com/camps/">Horse Camp</a></li>
+        </ul>
+        </li>
+        <li id="menu-item-245" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-19 current_page_item menu-item-245"><a href="http://brightleafstables.com/contact/" aria-current="page">Contact</a></li>
+        </ul></div>		</nav><!-- #site-navigation -->
+            </header><!-- #masthead -->
+        
+            <div id="content" class="site-content">
+        
+                
+                    
+        
+                
+                
+                <div class="content-wrapper without-featured-image">
+                    <div id="primary" class="content-area">
+                        <main id="main" class="site-main" role="main">
+        
+                            
+                                
+        <article id="post-19" class="post-19 page type-page status-publish without-featured-image hentry">
+        
+            <header class="entry-header">
+                <h1 class="entry-title">Contact Us</h1>
+            </header><!-- .entry-header -->
+        
+            <div class="entry-content">
+                <p><img data-attachment-id="547" data-permalink="http://brightleafstables.com/contact/2016-09-03-18-15-54-e1473025794741/#main" data-orig-file="https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/2016-09-03-18.15.54-e1473025794741-1.jpg?fit=768%2C1024" data-orig-size="768,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.7&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;SM-G935P&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1472926554&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;4.2&quot;,&quot;iso&quot;:&quot;50&quot;,&quot;shutter_speed&quot;:&quot;0.0048780487804878&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="2016-09-03-18.15.54-e1473025794741" data-image-description="" data-medium-file="https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/2016-09-03-18.15.54-e1473025794741-1.jpg?fit=225%2C300" data-large-file="https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/2016-09-03-18.15.54-e1473025794741-1.jpg?fit=768%2C1024" class="wp-image-547 size-medium alignleft" src="https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/2016-09-03-18.15.54-e1473025794741-1.jpg?resize=225%2C300" srcset="https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/2016-09-03-18.15.54-e1473025794741-1.jpg?resize=225%2C300 225w, https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/2016-09-03-18.15.54-e1473025794741-1.jpg?w=768 768w, https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/2016-09-03-18.15.54-e1473025794741-1.jpg?resize=285%2C380 285w" sizes="(max-width: 225px) 100vw, 225px" width="225" height="300"></p>
+        <p>&nbsp;</p>
+        <p>For questions or more information on any of our services feel free to fill out the contact form below. &nbsp;We&nbsp;will respond to your inquiry within 48 business hours.</p>
+        <p>Thank you!</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div id="contact-form-19">
+        <form action="http://brightleafstables.com/contact/#contact-form-19" method="post" class="contact-form commentsblock">
+        
+        <div>
+                <label for="g19-name" class="grunion-field-label name">Name<span>(required)</span></label>
+                <input type="text" name="g19-name" id="g19-name" value="" class="name" required="" aria-required="true">
+            </div>
+        
+        <div>
+                <label for="g19-email" class="grunion-field-label email">Email<span>(required)</span></label>
+                <input type="email" name="g19-email" id="g19-email" value="" class="email" required="" aria-required="true">
+            </div>
+        
+        <div>
+                <label for="g19-phonenumber" class="grunion-field-label text">Phone Number</label>
+                <input type="text" name="g19-phonenumber" id="g19-phonenumber" value="" class="text">
+            </div>
+        
+        <div>
+                <label for="contact-form-comment-g19-comment" class="grunion-field-label textarea">Comment<span>(required)</span></label>
+                <textarea name="g19-comment" id="contact-form-comment-g19-comment" rows="20" class="textarea" required="" aria-required="true"></textarea>
+            </div>
+            <p class="contact-submit">
+                <input type="submit" value="Submit »" class="pushbutton-wide">
+                <input type="hidden" name="contact-form-id" value="19">
+                <input type="hidden" name="action" value="grunion-contact-form">
+            </p>
+        </form>
+        </div>
+        <p>&nbsp;</p>
+                
+            </div><!-- .entry-content -->
+            
+        </article><!-- #post-## -->
+        
+                                
+                            
+                        </main><!-- #main -->
+                    </div><!-- #primary -->
+        
+                            </div><!-- .content-wrapper -->
+        
+        
+            </div><!-- #content -->
+        
+            
+        <div id="tertiary" class="widget-area footer-widget-area" role="complementary">
+                <div id="widget-area-2" class="widget-area">
+                <aside id="wpcw_contact-4" class="widget wpcw-widgets wpcw-widget-contact"><h3 class="widget-title">Contact Us</h3><ul><li class="has-label"><strong>Email</strong><br><div><a href="mailto:brightleaf.stables@gmail.com">brightleaf.stables@gmail.com</a></div></li><li class="has-label"><strong>Phone</strong><br><div>1-919-949-7386</div></li><li class="has-label"><strong>Address</strong><br><div>1215 Sherron Rd. <br>
+        Durham, NC 27703</div></li><li class="has-map"><iframe src="https://www.google.com/maps?q=1215+Sherron+Rd.+%0D%0ADurham%2C+NC+27703&amp;output=embed&amp;hl=en&amp;z=14" frameborder="0" class="wpcw-widget-contact-map"></iframe></li></ul></aside>	</div><!-- #widget-area-2 -->
+            
+                <div id="widget-area-3" class="widget-area">
+                <aside id="text-6" class="widget widget_text"><h3 class="widget-title">Brightleaf Stables</h3>			<div class="textwidget">Horse farm and riding stables located in North Carolina’s premier Research Triangle Park.  Just a hoof beat away from Durham/Raleigh and surrounding areas.  Situated on acres of protected land plentiful in trails.  
+        </div>
+                </aside>	</div><!-- #widget-area-3 -->
+            
+                <div id="widget-area-4" class="widget-area">
+                        <aside id="recent-posts-11" class="widget widget_recent_entries">		<h3 class="widget-title">Latest News</h3>		<ul>
+                                                    <li>
+                            <a href="http://brightleafstables.com/valentine-ride/">Valentine Ride</a>
+                                            </li>
+                                                    <li>
+                            <a href="http://brightleafstables.com/2019-horse-camp/">2019 Horse Camp</a>
+                                            </li>
+                                                    <li>
+                            <a href="http://brightleafstables.com/fall-day-camp-2018/">Fall Day Camp 2018</a>
+                                            </li>
+                                                    <li>
+                            <a href="http://brightleafstables.com/april-boarder-spotlight-cadillac/">April Boarder Spotlight – Cadillac</a>
+                                            </li>
+                                                    <li>
+                            <a href="http://brightleafstables.com/brightleaf-love-your-pet-day/">Brightleaf Love Your Pet Day!</a>
+                                            </li>
+                            </ul>
+                </aside><aside id="search-5" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://brightleafstables.com/">
+                        <label>
+                            <span class="screen-reader-text">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form></aside>	</div><!-- #widget-area-4 -->
+            </div><!-- #tertiary -->
+        
+            <footer id="colophon" class="site-footer">
+                            <div class="social-links"><ul id="menu-social" class="menu"><li id="menu-item-146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-146"><a href="https://www.facebook.com/brightleaf.stables"><span class="screen-reader-text">Facebook</span></a></li>
+        <li id="menu-item-147" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-147"><a href="http://instagram.com"><span class="screen-reader-text">Instagram</span></a></li>
+        </ul></div>		
+                <div class="site-info" role="contentinfo">
+                    <a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
+                    <span class="sep"> | </span>
+                    Theme: sela by <a href="http://wordpress.com/themes/sela/" rel="designer">WordPress.com</a>.		</div><!-- .site-info -->
+            </footer><!-- #colophon -->
+        </div>#page -->
+    <!--     
+        <script type="text/javascript">
+        jQuery(document).on('ready', function() {
+            jQuery('.placeholder-for-hentry').addClass('hentry');
+            jQuery('.placeholder-for-hentry').removeClass('placeholder-for-hentry');
+        });
+        </script>
+                <script>
+                ( function ( body ) {
+                    'use strict';
+                    body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+                } )( document.body );
+                </script>
+                    <div style="display:none">
+            </div>
+        <script type="text/javascript"> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done"}};/* ]]> */ </script>		<script type="text/javascript">
+                    window.onload = ( function() {
+                        var maps = document.getElementsByClassName( 'wpcw-widget-contact-map' );
+                        for ( var i = 0; i < maps.length; i++ ) {
+                            var src = maps[i].getAttribute( 'data-src' );
+                            if ( src ) {
+                                maps[i].setAttribute( 'src', src );
+                                maps[i].removeAttribute( 'data-src' );
+                            }
+                        }
+                    } );
+                </script>   -->
+        <img src="http://pixel.wp.com/g.gif?v=ext&amp;j=1%3A5.0&amp;blog=112913681&amp;post=19&amp;tz=-7&amp;srv=brightleafstables.com&amp;host=brightleafstables.com&amp;ref=http%3A%2F%2Fbrightleafstables.com%2Fevents%2F&amp;fcp=1545&amp;rand=0.26450972453635724" alt=":)" width="6" height="5" id="wpstats" scale="0">
+    </body>
+</html> -->
+
