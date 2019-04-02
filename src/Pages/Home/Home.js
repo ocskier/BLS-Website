@@ -18,17 +18,17 @@ class Home extends React.Component {
                 <Card 
                     title='Trail Rides'
                     descrip='Not all who wonder are lost.  Take a journey on miles of scenic trails right in our backyard.  Explore the world around you on the back of a horse.'
-                    image="https://brightleafstables.files.wordpress.com/2016/06/cropped-13177179_10100818610181037_8823607613937186676_n.jpg?ssl=1&amp;w=321"
+                    image="http://brightleafstables.files.wordpress.com/2016/06/cropped-13177179_10100818610181037_8823607613937186676_n.jpg?ssl=1&amp;w=321"
                 />
                 <Card 
                     title='Fun for Kids'
                     descrip='Brightleaf fun for the little ones.  Because kids don’t remember their best day of watching TV.  Our horses are gentle teachers perfect for children of all ages.'
-                    image="https://i2.wp.com/brightleafstables.files.wordpress.com/2016/06/12369247_333428910160697_8470201872324983739_n.jpg?ssl=1&amp;w=321"
+                    image="http://i2.wp.com/brightleafstables.files.wordpress.com/2016/06/12369247_333428910160697_8470201872324983739_n.jpg?ssl=1&amp;w=321"
                 />
                 <Card 
                     title='Yoga &amp; Horses'
                     descrip='Ground and connect with Mother Nature’s magical creatures.  Experience the equine elements of grace, power, spirit, and beauty.'
-                    image="https://i0.wp.com/brightleafstables.files.wordpress.com/2016/06/blyoga.jpg?ssl=1&amp;w=321"
+                    image="http://i0.wp.com/brightleafstables.files.wordpress.com/2016/06/blyoga.jpg?ssl=1&amp;w=321"
                 />
             </div>
         )
