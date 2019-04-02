@@ -55,8 +55,8 @@ class MyCarousel extends React.Component {
                 />
                 <Slide
                     media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/13516324_394465414057046_2859548695555038234_n.jpg?fit=445%2C480' alt='Pic 3' height='320' width='400'/>}
-                    mediaBackgroundStyle={{ backgroundColor: green[400] }}
-                    style={{ backgroundColor: green[600] }}
+                    mediaBackgroundStyle={{ backgroundColor: 'white' }}
+                    style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px'}}
                     title='Prancer “Jack” -- Brightleaf Resident Since 2014'
                     subtitle='In June of 2014&nbsp;Steven answered an add on Craigslist for a miniature donkey. The donkey was owned 
                     by a 12 year old girl. Heather came home from work one day and Steven told her that he needed for her to go to 
@@ -71,38 +71,29 @@ class MyCarousel extends React.Component {
                     in the yard at the farm.'
                 />
                 <Slide
-                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/13516324_394465414057046_2859548695555038234_n.jpg?fit=445%2C480' alt='Pic 3' height='320' width='400'/>}
-                    mediaBackgroundStyle={{ backgroundColor: green[400] }}
-                    style={{ backgroundColor: green[600] }}
-                    title='Prancer “Jack” -- Brightleaf Resident Since 2014'
-                    subtitle='In June of 2014&nbsp;Steven answered an add on Craigslist for a miniature donkey. The donkey was owned 
-                    by a 12 year old girl. Heather came home from work one day and Steven told her that he needed for her to go to 
-                    Creedmoor, NC to pick up a donkey. Reluctantly, Heather went along for the ride. Steven fell in love with the 
-                    donkey and of course wanted to bring it home. The family that owned Prancer was moving from the country to the city 
-                    and no longer could keep him. The young girl was sad. Heather knew this would be work as Prancer was very spoiled 
-                    and liked to kick and bite. Of course Prancer came to Brightleaf. Heather then started working with Prancer trying 
-                    to do basic grooming and such and found out very quickly that Prancer was Jackie Chan! He loves to kick very high 
-                    and bite low. He is full of personality to say the least. Steven has taught him to lay down and roll over. We now 
-                    call him “Jack” among other names when he is naughty! His young previous owner still comes to visit. Jack enjoys 
-                    cookies,chips and suckers. If no other sweets are available he will eat carrots. Most days you will find him grazing 
-                    in the yard at the farm.'
+                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/luna.jpg?fit=3024%2C4032' alt='Pic 3' height='320' width='400'/>}
+                    mediaBackgroundStyle={{ backgroundColor: 'black' }}
+                    style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px'}}
+                    title='Luna Diamond in the Sky -- Brightleaf Resident Since 2010'
+                    subtitle='Luna is a beautiful Grulla quarter horse mare.  Grulla is her coat color, a unique and silvery tone with 
+                    a single white star on her face, she is truly a diamond in the sky!   Luna became a Brightleaf resident in September
+                    of 2010 and she quickly found her place in our hearts.  She is as sweet and patient as can be and will surely follow 
+                    in Princess’s footsteps.  Luna is great on the trails with a little pep in her step, she is patient with her riders, 
+                    and when asked to go she can turn a barrel like she was born to do it!  Sometimes you’ll hear Luna being referred to 
+                    as “Chunk” that’s probably because she is one of the bulkiest horses we have, she is built like a western working horse 
+                    with a thick chest, bulky hind quarters, and broad shoulders.  Don’t let her “Chunk” status fool you though, she is 
+                    sweeter than honey.  We are happy to have Luna as part of the Brightleaf family and look forward to many more years.'
                 />
                 <Slide
-                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/13516324_394465414057046_2859548695555038234_n.jpg?fit=445%2C480' alt='Pic 3' height='320' width='400'/>}
-                    mediaBackgroundStyle={{ backgroundColor: green[400] }}
-                    style={{ backgroundColor: green[600] }}
-                    title='Prancer “Jack” -- Brightleaf Resident Since 2014'
-                    subtitle='In June of 2014&nbsp;Steven answered an add on Craigslist for a miniature donkey. The donkey was owned 
-                    by a 12 year old girl. Heather came home from work one day and Steven told her that he needed for her to go to 
-                    Creedmoor, NC to pick up a donkey. Reluctantly, Heather went along for the ride. Steven fell in love with the 
-                    donkey and of course wanted to bring it home. The family that owned Prancer was moving from the country to the city 
-                    and no longer could keep him. The young girl was sad. Heather knew this would be work as Prancer was very spoiled 
-                    and liked to kick and bite. Of course Prancer came to Brightleaf. Heather then started working with Prancer trying 
-                    to do basic grooming and such and found out very quickly that Prancer was Jackie Chan! He loves to kick very high 
-                    and bite low. He is full of personality to say the least. Steven has taught him to lay down and roll over. We now 
-                    call him “Jack” among other names when he is naughty! His young previous owner still comes to visit. Jack enjoys 
-                    cookies,chips and suckers. If no other sweets are available he will eat carrots. Most days you will find him grazing 
-                    in the yard at the farm.'
+                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2019/02/4838.jpg?fit=3024%2C4032' alt='Pic 3' height='320' width='400'/>}
+                    mediaBackgroundStyle={{ backgroundColor: 'black' }}
+                    style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px'}}
+                    title='“Hunny” Desperado Sunshine -- Brightleaf Resident Since 2014'
+                    subtitle='Hunny is a big beautiful Dun quarter horse that is as sweet as she is big! She was born on April 29, 2004 
+                    in Canton North Carolina. She is one of the many favorites on the farm. She is super gentle as this makes for a great 
+                    lesson or trail ride. Most days you will find Hunny under the barn fan or in her stall eating hay and napping with 
+                    the barn cat Vinny. Hunny’s favorite treats are carrots. She loves to be groomed and will give you a hug! She has 
+                    more whoa than go! She is a great horse to learn how to trot and canter on.'
                 />
             </AutoRotatingCarousel>
             </div>

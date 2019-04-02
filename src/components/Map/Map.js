@@ -2,9 +2,11 @@ import React from "react"
 import { compose, withProps } from "recompose"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
+const url = "https://maps.googleapis.com/maps/api/js?key="+process.env.REACT_APP_MAPKEY;
+
 const MyMapComponent = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyD_vFXwk45K5ehRWciFb_T8mwwm76v6exg",
+    googleMapURL: url,
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ margin: "0 auto", height: `250px`, width: '600px' }} />,
     mapElement: <div style={{ height: `100%` }} />,

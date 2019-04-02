@@ -16,7 +16,6 @@ import "./App.css";
 import PageTabs from "./components/PageTabs";
 import MyCarousel from './components/Carousel';
 
-
 class App extends Component {
  
   state = {

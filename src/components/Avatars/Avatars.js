@@ -34,7 +34,7 @@ const styles = {
 };
 
 function IconAvatars(props) {
-  const { classes,children } = props;
+  const { classes, children } = props;
   return (
     <div style={{display: 'flex',width:'50%',margin:'0 auto'}}>
       <Grid container justify="center" alignItems="center">
