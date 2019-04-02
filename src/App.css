@@ -1,8 +1,8 @@
 .nav-wrapper, .page-footer {
-  background-color: #002147 !important;
+  background-color:rgb(53, 89, 89) !important;
 }
 .parallax-container {
-  min-height: 380px;
+  min-height: 550px;
   line-height: 0;
   height: auto !important;
   color: rgba(255,255,255,.9);
@@ -14,7 +14,11 @@
 img {
   width: 100%
 }
-
+.grey-text {
+  font-size: x-large;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
 @media screen and (min-width: 996px) {
 .button-collapse {
   display: none;

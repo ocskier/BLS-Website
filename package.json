@@ -1,10 +1,17 @@
 {
   "name": "brightleafstables",
   "version": "0.1.0",
+  "description": "Brightleaf Homesite",
+  "main": "index.js",
+  "homepage": "https://ocskier.github.io/BLS-Website/",
+  "repository": "https://github.com/ocskier/BLS-Website.git",
+  "author": "<ocskier@gmail.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
@@ -13,6 +20,8 @@
     "react-scripts": "2.1.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
