@@ -1,0 +1,3 @@
+div[class*='AutoRotatingCarousel-carouselWrapper'] {
+    box-shadow: 0 0 60px 60px #888888 !important
+}

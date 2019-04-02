@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
+import classNames from "classnames";
 import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -14,6 +15,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 // import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
+import './PageTabs.css';
 
 const styles = theme => ({
   root: {
@@ -55,17 +58,17 @@ const styles = theme => ({
   },
   links: {
       fontSize: '0.8rem'
-  }
+  },
 });
 
 class IconLabelTabs extends React.Component {
 
   render() {
-    const { classes } = this.props;
+    const { classes, clickOpen } = this.props;
 
     return (
       <Paper square className={classes.root}>
-          <ExpansionPanel  className={classes.panel} style={{left: '30%'}}>
+          <ExpansionPanel  className={classNames(classes.panel,"panel-About")}>
             <ExpansionPanelSummary className={classes.content}>
                 <Typography className={classes.heading}>About</Typography>
             </ExpansionPanelSummary>
@@ -74,14 +77,21 @@ class IconLabelTabs extends React.Component {
                     <List>
                         <ListItem button>
                             <Typography>
-                                <Link to="http://brightleafstables.com/about/">Our Story</Link>
+                                <Link to="/ourstory">Our Story</Link>
                             </Typography>
                         {/* <ListItemIcon>
                         </ListItemIcon> */}
                         </ListItem>
                         <ListItem button>
                             <Typography>
-                                <Link to="http://brightleafstables.com/brightleaf-horses/">Brightleaf Horses</Link>
+                                <Link to="/staff">Brightleaf Staff</Link>
+                            </Typography>
+                        {/* <ListItemIcon>
+                        </ListItemIcon> */}
+                        </ListItem>
+                        <ListItem button onClick={()=> clickOpen()}>
+                            <Typography>
+                                <Link to="/">Brightleaf Horses</Link>
                             </Typography>
                         {/* <ListItemIcon>
                         </ListItemIcon> */}
@@ -111,7 +121,7 @@ class IconLabelTabs extends React.Component {
                 </div>
             </ExpansionPanelDetails>
           </ExpansionPanel>
-          <ExpansionPanel  className={classes.panel} style={{left: '40%'}}>
+          <ExpansionPanel  className={classNames(classes.panel,"panel-Services")}>
             <ExpansionPanelSummary className={classes.content}>
                 <Typography className={classes.heading}>Services</Typography>
             </ExpansionPanelSummary>
@@ -164,7 +174,7 @@ class IconLabelTabs extends React.Component {
                 </div>
             </ExpansionPanelDetails>
           </ExpansionPanel>
-          <ExpansionPanel  className={classes.panel} style={{left: '50%'}}>
+          <ExpansionPanel  className={classNames(classes.panel,'panel-Events')}>
             <ExpansionPanelSummary className={classes.content}>
                 <Typography className={classes.heading}>Events</Typography>
             </ExpansionPanelSummary>
@@ -189,7 +199,7 @@ class IconLabelTabs extends React.Component {
                 </div>
             </ExpansionPanelDetails>
           </ExpansionPanel>
-          <ExpansionPanel  className={classes.panel} style={{left: '60%'}}>
+          <ExpansionPanel  className={classNames(classes.panel,'panel-Contact')}>
             <ExpansionPanelSummary className={classes.content}>
                 <Typography className={classes.heading}>Contact</Typography>
             </ExpansionPanelSummary>

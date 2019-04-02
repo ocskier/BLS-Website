@@ -1,0 +1,30 @@
+.panel-About {
+    left: 30%
+}
+.panel-Services {
+    left: 40%
+}
+.panel-Events {
+    left: 50%
+}
+.panel-Contact {
+    left: 60%
+}
+
+@media (max-width: 1028px) {
+    div[class*='panel'] {
+        width: 25%
+    }
+    .panel-About {
+        left: 0
+    }
+    .panel-Services {
+        left: 25%
+    }
+    .panel-Events {
+        left: 50%
+    }
+    .panel-Contact {
+        left: 75%
+    }
+}
