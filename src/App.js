@@ -29,27 +29,27 @@ class App extends Component {
         <div>
           <Nav>BrightLeaf Stables</Nav>
           <PageTabs />
-              <Main>
-                <Parallax imageSrc="ezgif.com-crop.gif"/>
-                {/* <video autoplay loop id="bgvid">
-                    <source src="Horse.mp4" type="video/mp4"></source>
-                </video> */}
-                <div className="section white">
-                  <div className="row container">
-                    <h3 className="widget-title">Brightleaf Stables</h3>
-                    <p className="grey-text text-darken-3 darken-3">Horse farm and riding stables located in North Carolina’s premier Research Triangle Park.  Just a hoof beat away from Durham/Raleigh and surrounding areas.  Situated on acres of protected land plentiful in trails.  For driving directions</p>
-                  </div>
-                </div>
-                {/* <Parallax imageSrc="ezgif.com-crop.gif" /> */}
-                <Parallax imageSrc="http://brightleafstables.com/wp-content/uploads/2016/06/pic-1024x768.jpg"/>
-                <div className="section white">
-                  <div className="row container">
-                    <Switch>
-                      <Route exact path ="/" component={Home} />
-                    </Switch>
-                  </div>
-                </div>
-              </Main>
+          <Main>
+            <Parallax imageSrc="ezgif.com-crop.gif"/>
+            {/* <video autoplay loop id="bgvid">
+                <source src="Horse.mp4" type="video/mp4"></source>
+            </video> */}
+            <div className="section white">
+              <div className="row container">
+                <h3 className="widget-title">Brightleaf Stables</h3>
+                <p className="grey-text text-darken-3 darken-3">Horse farm and riding stables located in North Carolina’s premier Research Triangle Park.  Just a hoof beat away from Durham/Raleigh and surrounding areas.  Situated on acres of protected land plentiful in trails.  For driving directions</p>
+              </div>
+            </div>
+            {/* <Parallax imageSrc="ezgif.com-crop.gif" /> */}
+            <Parallax imageSrc="http://brightleafstables.com/wp-content/uploads/2016/06/pic-1024x768.jpg"/>
+            <div className="section white">
+              <div className="row container">
+                <Switch>
+                  <Route exact path ="/" component={Home} />
+                </Switch>
+              </div>
+            </div>
+          </Main>
           <Footer>
               <Avatar>
                   <svg style={{width:"24px",height:"24px"}} viewBox="0 0 24 24">
@@ -57,7 +57,7 @@ class App extends Component {
                   </svg>
               </Avatar>
           </Footer>
-      </div>
+        </div>
      </Router>
     );
   }
