@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "61a804b061872c1e00ad",
+    "revision": "93335876ff8211bc60eb",
     "url": "/BLS-Website/static/css/main.ead437c7.chunk.css"
   },
   {
-    "revision": "61a804b061872c1e00ad",
-    "url": "/BLS-Website/static/js/main.61a804b0.chunk.js"
+    "revision": "93335876ff8211bc60eb",
+    "url": "/BLS-Website/static/js/main.93335876.chunk.js"
   },
   {
     "revision": "b2b98cec26dc45fccf86",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/BLS-Website/static/js/2.a4631848.chunk.js"
   },
   {
-    "revision": "c8cb2ca12a23d8dfdfad981fed6bdd3d",
+    "revision": "ba5bff30179bf8bf9c4073d8abfee292",
     "url": "/BLS-Website/index.html"
   }
 ];
