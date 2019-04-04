@@ -14,7 +14,7 @@ class Home extends React.Component {
     render () {
         // const {classes} = this.props;
         return (
-            <div style={{display:'flex'}}>
+            <div style={{display:'flex', flexWrap: 'wrap', justifyContent: 'center'}}>
                 <Card 
                     title='Trail Rides'
                     descrip='Not all who wonder are lost.  Take a journey on miles of scenic trails right in our backyard.  Explore the world around you on the back of a horse.'
