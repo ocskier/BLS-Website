@@ -69,7 +69,11 @@ class App extends Component {
           </Main>
           <Footer moreLinks={<Avatars />}>
           </Footer>
-          {this.state.open ? <MyCarousel open={this.state.open} close={this.closeCarousel} />  : null}
+          {this.state.open ? 
+            <MyCarousel 
+              open={this.state.open} 
+              close={this.closeCarousel} />  : 
+              null}
         </div>
      </Router>
     );
