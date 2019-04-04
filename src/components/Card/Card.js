@@ -9,15 +9,21 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const styles = {
+const styles = theme =>({
   card: {
-    maxWidth: 345,
-    margin: '10px'
+    maxWidth: 325,
+    margin: '10px',
+    [theme.breakpoints.down('md')]: {
+      maxWidth: 205,
+    },
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: 250,
+    }
   },
   media: {
     height: 140,
   },
-};
+});
 
 function MediaCard(props) {
   const { classes, image, descrip, title } = props;
