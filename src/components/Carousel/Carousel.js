@@ -33,6 +33,8 @@ if (isMobile.any()) {
     mobileYes = true;
 }
 
+const title = `Princess - Heart of the Farm -${mobileYes}- Brightleaf Resident since 1999`;
+
 class MyCarousel extends React.Component {
 
     render () {
@@ -54,7 +56,7 @@ class MyCarousel extends React.Component {
                     media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/77b2f138-53b8-4e6c-82f2-d7a3d29323ae.jpg?fit=1516%2C1137' alt='Pic 1' height='320' width='400'/>}
                     mediaBackgroundStyle={{ backgroundColor: 'white' }}
                     style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px'}}
-                    title='Princess \n Heart of the Farm - Brightleaf Resident since 1999'
+                    title={title}
                     subtitle='Miss Jazz Harmony June 15, 1991 Black/Tobiano paint mare Sire-Real Jazz Dam-Impressing Jody out of Mississippi. 
                     &nbsp;Princess was purchased by Steven the year of 1999 to be his trail horse.  Princess came to the farm 
                     a retired barrel racer who was too sensitive to spurs/pressure on the flanks and too fast for 
