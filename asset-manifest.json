@@ -1,13 +1,13 @@
 {
-  "main.css": "/BLS-Website/static/css/main.08e672eb.chunk.css",
-  "main.js": "/BLS-Website/static/js/main.2a7a0c1f.chunk.js",
-  "main.js.map": "/BLS-Website/static/js/main.2a7a0c1f.chunk.js.map",
+  "main.css": "/BLS-Website/static/css/main.e0f7d216.chunk.css",
+  "main.js": "/BLS-Website/static/js/main.4f4ae196.chunk.js",
+  "main.js.map": "/BLS-Website/static/js/main.4f4ae196.chunk.js.map",
   "runtime~main.js": "/BLS-Website/static/js/runtime~main.b2b98cec.js",
   "runtime~main.js.map": "/BLS-Website/static/js/runtime~main.b2b98cec.js.map",
-  "static/js/2.dd8863bb.chunk.js": "/BLS-Website/static/js/2.dd8863bb.chunk.js",
-  "static/js/2.dd8863bb.chunk.js.map": "/BLS-Website/static/js/2.dd8863bb.chunk.js.map",
+  "static/js/2.a88d1a24.chunk.js": "/BLS-Website/static/js/2.a88d1a24.chunk.js",
+  "static/js/2.a88d1a24.chunk.js.map": "/BLS-Website/static/js/2.a88d1a24.chunk.js.map",
   "index.html": "/BLS-Website/index.html",
-  "precache-manifest.5dfd5f0ce3543cd17cffb0230341c9fb.js": "/BLS-Website/precache-manifest.5dfd5f0ce3543cd17cffb0230341c9fb.js",
+  "precache-manifest.a683f897c52354829db2721a69d24dff.js": "/BLS-Website/precache-manifest.a683f897c52354829db2721a69d24dff.js",
   "service-worker.js": "/BLS-Website/service-worker.js",
-  "static/css/main.08e672eb.chunk.css.map": "/BLS-Website/static/css/main.08e672eb.chunk.css.map"
+  "static/css/main.e0f7d216.chunk.css.map": "/BLS-Website/static/css/main.e0f7d216.chunk.css.map"
 }
