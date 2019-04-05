@@ -21,3 +21,11 @@
   display: none;
 }
 }
+.player-wrapper {
+  width: 100%; 
+  height: 425px; 
+}
+
+video {
+  object-fit:fill;
+}

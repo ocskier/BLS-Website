@@ -5,7 +5,17 @@ import {withStyles} from '@material-ui/core/styles';
 
 const style = {
     root: {
-        width: "80%",
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '0 auto'
+    },
+    image: {
+        backgroundPosition:'50%',
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'cover',
+        height:'auto',
+        width:'100%',
+        maxHeight: '476px'
     }
 }
 
@@ -16,7 +26,7 @@ class Staff extends React.Component {
         return (
             <div className={classes.root}>
                 <h3 style={{textAlign:'center'}}>Staff</h3>
-                <img src="https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/unnamed-2.jpg?w=1280" alt="our staff"></img>
+                <img className={classes.image} src="https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/unnamed-2.jpg?w=1280" alt="our staff"></img>
                 <h5 style={{textAlign:'center'}}>Heather Holder: Owner-Operator  ----  Steven Holder: Owner-Operator</h5>
                 <h3 style={{textAlign:'center'}}>More Coming Soon</h3>
             </div>

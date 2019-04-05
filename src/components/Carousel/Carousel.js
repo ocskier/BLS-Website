@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import { AutoRotatingCarousel, Slide } from 'material-auto-rotating-carousel';
 
 import './Carousel.css';
@@ -105,9 +105,10 @@ class MyCarousel extends React.Component {
                     // onStart={() => this.setState({ open: false })}
                     style={{ position: 'absolute' }}
                 >
-                    {SlideArr.map(n => {
+                    {SlideArr.map((n,i) => {
                         return (
                             <CustomSlide
+                                key={i}
                                 media={
                                 <img 
                                     src={n.image} 
