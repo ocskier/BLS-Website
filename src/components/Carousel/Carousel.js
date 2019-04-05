@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from "prop-types";
 
 import { green } from '@material-ui/core/colors';
 // const Button = require('@material-ui/core/Button').default;
 import { AutoRotatingCarousel, Slide } from 'material-auto-rotating-carousel';
 
 import './Carousel.css';
+import withStyles from '@material-ui/core/styles/withStyles';
 
 var isMobile = {
     Android: function() {
@@ -33,15 +35,47 @@ if (isMobile.any()) {
     mobileYes = true;
 }
 
+const CustomAutoRotatingCarousel = withStyles(() => ({
+    content: {
+        width: '90%',
+        height: '85%',
+        padding: '20px',
+        margin: '0 auto',
+        marginTop: '50px'
+    },
+    carouselWrapper: {
+        height: '85%',
+        margin: '30px'
+    }
+}))(AutoRotatingCarousel)
+
+const CustomSlide = withStyles(() => ({
+    media: {
+        backgroundPosition: '50%',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        height: 800,
+        width: 600
+    },
+    mediaMobile: {
+        transform: 'none !important',
+        backgroundPosition: '50%',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        height: 800,
+        width: 600
+    }
+}))(Slide)
+
 class MyCarousel extends React.Component {
 
     render () {
 
-        const {open,close} = this.props;
+        const { open, close } = this.props;
 
         return (
             <div style={{ position: 'relative', width: '100%', height: 500 }}>
-            <AutoRotatingCarousel
+            <CustomAutoRotatingCarousel
                 autoplay={false}
                 interval={6000}
                 mobile={mobileYes}
@@ -50,9 +84,9 @@ class MyCarousel extends React.Component {
                 // onStart={() => this.setState({ open: false })}
                 style={{ position: 'absolute' }}
             >
-                <Slide
-                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/77b2f138-53b8-4e6c-82f2-d7a3d29323ae.jpg?fit=1516%2C1137' alt='Pic 1' height='320' width='400'/>}
-                    mediaBackgroundStyle={{ backgroundColor: 'white' }}
+                <CustomSlide
+                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/77b2f138-53b8-4e6c-82f2-d7a3d29323ae.jpg?fit=1516%2C1137' alt='Pic 1'/>}
+                    mediaBackgroundStyle={{ backgroundColor: 'black' }}
                     style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px'}}
                     title='Princess Heart of the Farm - Brightleaf Resident since 1999'
                     subtitle='Miss Jazz Harmony June 15, 1991 Black/Tobiano paint mare Sire-Real Jazz Dam-Impressing Jody out of Mississippi. 
@@ -66,9 +100,9 @@ class MyCarousel extends React.Component {
                     She truly is the best horse ever born or to trot this planet. She is the and 
                     the heart of all that she comes in contact with.;'
                 />
-                <Slide
-                    media={<img src='https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/12828477_356935681143353_414924801405440247_o.jpg?fit=1152%2C2048' alt='Pic 2' height='320' width='400'/>}
-                    mediaBackgroundStyle={{ backgroundColor: 'white' }}
+                <CustomSlide
+                    media={<img src='https://i1.wp.com/brightleafstables.com/wp-content/uploads/2016/06/12828477_356935681143353_414924801405440247_o.jpg?fit=1152%2C2048' alt='Pic 2'/>}
+                    mediaBackgroundStyle={{ backgroundColor: 'black' }}
                     style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px' }}
                     title='Willow “Snuggles” - Brightleaf Resident Since 2015'
                     subtitle='On 8/22/15 Heather said “I want her!” &nbsp;Beauty “Big Momma” came to the farm ready to foal. She 
@@ -80,9 +114,9 @@ class MyCarousel extends React.Component {
                     sugar. She is loved by all that come in contact with her. She still has a lot of growing to do! She loves eating 
                     carrots and apples. She has the barn name of “Snuggles” as she loves to cuddle.'
                 />
-                <Slide
-                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/13516324_394465414057046_2859548695555038234_n.jpg?fit=445%2C480' alt='Pic 3' height='320' width='400'/>}
-                    mediaBackgroundStyle={{ backgroundColor: 'white' }}
+                <CustomSlide
+                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/13516324_394465414057046_2859548695555038234_n.jpg?fit=445%2C480' alt='Pic 3'/>}
+                    mediaBackgroundStyle={{ backgroundColor: 'black' }}
                     style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px'}}
                     title='Prancer “Jack” -- Brightleaf Resident Since 2014'
                     subtitle='In June of 2014&nbsp;Steven answered an add on Craigslist for a miniature donkey. The donkey was owned 
@@ -97,8 +131,8 @@ class MyCarousel extends React.Component {
                     cookies,chips and suckers. If no other sweets are available he will eat carrots. Most days you will find him grazing 
                     in the yard at the farm.'
                 />
-                <Slide
-                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/luna.jpg?fit=3024%2C4032' alt='Pic 3' height='320' width='400'/>}
+                <CustomSlide
+                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2016/06/luna.jpg?fit=3024%2C4032' alt='Pic 3'/>}
                     mediaBackgroundStyle={{ backgroundColor: 'black' }}
                     style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px'}}
                     title='Luna Diamond in the Sky -- Brightleaf Resident Since 2010'
@@ -111,10 +145,10 @@ class MyCarousel extends React.Component {
                     with a thick chest, bulky hind quarters, and broad shoulders.  Don’t let her “Chunk” status fool you though, she is 
                     sweeter than honey.  We are happy to have Luna as part of the Brightleaf family and look forward to many more years.'
                 />
-                <Slide
-                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2019/02/4838.jpg?fit=3024%2C4032' alt='Pic 3' height='320' width='400'/>}
+                <CustomSlide
+                    media={<img src='https://i2.wp.com/brightleafstables.com/wp-content/uploads/2019/02/4838.jpg?fit=3024%2C4032' alt='Pic 3'/>}
                     mediaBackgroundStyle={{ backgroundColor: 'black' }}
-                    style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '40px'}}
+                    style={{ backgroundColor: 'black', height: 'auto', paddingBottom: '50px'}}
                     title='“Hunny” Desperado Sunshine -- Brightleaf Resident Since 2014'
                     subtitle='Hunny is a big beautiful Dun quarter horse that is as sweet as she is big! She was born on April 29, 2004 
                     in Canton North Carolina. She is one of the many favorites on the farm. She is super gentle as this makes for a great 
@@ -122,7 +156,7 @@ class MyCarousel extends React.Component {
                     the barn cat Vinny. Hunny’s favorite treats are carrots. She loves to be groomed and will give you a hug! She has 
                     more whoa than go! She is a great horse to learn how to trot and canter on.'
                 />
-            </AutoRotatingCarousel>
+            </CustomAutoRotatingCarousel>
             </div>
         )
     }
