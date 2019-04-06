@@ -2,18 +2,6 @@
   color: black !important;
 }
 
-/* @media only screen and (max-width : 768px) {
-  .brand-logo {
-    font-size: 4.2rem !important
-  }
-}
-
-@media only screen and (max-width : 576px) {
-    .brand-logo {
-      font-size: 3.2rem !important
-    }
-  } */
-
 nav {
   height: 120px !important
 } 
@@ -24,16 +12,43 @@ nav ul a,
 nav.brand-logo {
   color: white;
 }
-.brand-logo {
+.mylogo {
+  position: absolute;
+  display: inline-block;
+  font-size: 3.6rem;
+  padding: 0;
+  white-space: nowrap;
   top: 2%;
-  font-size: 3.1rem !important;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center
 }
 
-.brand-logo p {
+.mylogo p {
   margin: 0;
   font-size: initial;
 }
 p {
   line-height: 1.2rem;
   font-family: 'Srisakdi', cursive;
+}
+
+@media only screen and (min-width : 768px) {
+  .material-icons {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .mylogo {
+    font-size: 2.7rem !important;
+    top: 15%;
+  }
+}
+
+@media only screen and (max-width : 576px) {
+    .mylogo {
+      font-size: 1.9rem !important;
+      top: 20%
+    }
 }

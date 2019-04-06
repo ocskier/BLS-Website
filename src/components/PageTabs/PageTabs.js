@@ -24,6 +24,9 @@ const styles = theme => ({
     backgroundColor: 'aliceblue',
     minHeight: '50px',
     boxShadow: 'none',
+    '@media only screen and (max-width : 768px)': {
+        display: 'none'
+    },
   },
   content: {
     padding: '0 24px 0 24px',
