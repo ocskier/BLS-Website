@@ -57,7 +57,7 @@ class App extends Component {
                 width='100%'
                 height='100%'
                 muted={true}
-                playing 
+                playing={true}
                 loop={true}
               />
             </div>
