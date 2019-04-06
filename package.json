@@ -22,7 +22,9 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.5",
     "react-swipeable-views": "^0.13.1",
-    "recompose": "^0.30.0"
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1",
+    "video-react": "^0.13.6"
   },
   "scripts": {
     "predeploy": "npm run build",

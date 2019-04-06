@@ -17,15 +17,7 @@
   line-height: 2.25rem;
 }
 @media screen and (min-width: 996px) {
-.button-collapse {
-  display: none;
-}
-}
-.player-wrapper {
-  width: 100%; 
-  height: 425px; 
-}
-
-video {
-  object-fit:fill;
+  .button-collapse {
+    display: none;
+  }
 }

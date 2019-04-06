@@ -5,7 +5,17 @@ import {withStyles} from '@material-ui/core/styles';
 
 const style = {
     root: {
-        width: "80%",
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '0 auto'
+    },
+    image: {
+        backgroundPosition:'50%',
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'cover',
+        height:'auto',
+        width:'100%',
+        maxHeight: '476px'
     }
 }
 
@@ -16,7 +26,7 @@ class About extends React.Component {
         return (
             <div className={classes.root}>
                 <h3 style={{textAlign:'center'}}>About Us</h3>
-                <img src="https://i0.wp.com/brightleafstables.com/wp-content/uploads/2016/06/532290_268654476590774_856782682_n.jpg?w=640" alt="our family"></img>
+                <img className={classes.image} src="https://i0.wp.com/brightleafstables.com/wp-content/uploads/2016/06/532290_268654476590774_856782682_n.jpg?w=640" alt="our family"></img>
                 <p style={{fontSize:'1.8rem',lineHeight:'3.0rem'}}>In March 1999 Steven and Heather purchased the land that now is called Brightleaf Stables.  Steven and Heather 
                 started immediately renovating the farm house on the property.  On October 9th 1999 Steven and Heather were married.  All 
                 of the surrounding land was farmed by Steven and family for tobacco for many years.  They spent many days under the trees 
